@@ -45,7 +45,7 @@ public class Main {
         }
         System.out.println("\n" + gagnant);
 
-        System.out.println("Cheating score \n"+gagnant.score);
+
     }
 
 }
