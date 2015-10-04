@@ -20,9 +20,8 @@ public class Main {
 
 
         //Defining the winner
-        Winner gagnant = new Winner();
+        int winnerIndice=0;
         int winnersScore = 0;
-        gagnant.defineWinner(plist[0]); //Joueur1 is the Default winner
 
         /*Playing 10 rounds*/
         System.out.println("*************** JEU DE DE ***************");
@@ -36,16 +35,15 @@ public class Main {
                 System.out.println(plist[j]);
 
                 //Picking the winner :
-                if(plist[j].getScore()==winnersScore){
-                    gagnant.defineWinner(plist[j]);
+                if(plist[j].getScore()>winnersScore){
+                    winnerIndice=j;
                     winnersScore=plist[j].getScore();
                 }
 
             }
         }
-        System.out.println("\n" + gagnant);
+        System.out.println("\n\nLe gagnant est le "+plist[winnerIndice].getjName()+" avec un score de: "+winnersScore);
 
-        System.out.println("Cheating score \n"+gagnant.score);
     }
 
 }

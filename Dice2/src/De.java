@@ -8,7 +8,7 @@ public class De {
     }
 
     public byte casHasard() {
-        return (byte)((int)(Math.random() * 7.0D));
+        return (byte)((int)(Math.random() * 6 +1));
     }
 }
 

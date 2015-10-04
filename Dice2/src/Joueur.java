@@ -2,7 +2,7 @@
  * Created by fcmam5 on 02/10/15.
  */
 public class Joueur {
-    private int score;
+    private int score=0;
     private byte rScore;
     private static int jID = 0;
     public String jName;
@@ -10,7 +10,10 @@ public class Joueur {
     public Joueur() {
         ++jID;
         this.jName = "Joueur" + jID;
-        this.score = 0;
+    }
+
+    public String getjName() {
+        return jName;
     }
 
     public void lanceDe() {
