@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by fcmam5 on 02/10/15.
  */
 public class Main {
@@ -31,6 +31,10 @@ public class Main {
 
             // They play
             for (int j = 0; j < plist.length; j++) {
+/**
+ * Created by asmaa on 02/10/16.
+ */
+        System.out.println("*************** Les De sont lancés ***************");
                 plist[j].lanceDe();
                 // Their score is :
                 System.out.println(plist[j]);
